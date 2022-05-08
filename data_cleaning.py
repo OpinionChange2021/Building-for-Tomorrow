@@ -1,6 +1,6 @@
 ## datasets clearning 
 
-- GESD
+# GESD
 
 import string
 
@@ -26,13 +26,13 @@ def clean_text(x):
     
     return x.lower()
 
-for more check: https://github.com/OpinionChange2021/opinion_are_made_to_be_changed
+##for more check: https://github.com/OpinionChange2021/opinion_are_made_to_be_changed
 
-- TESA
+# TESA
 
-evidance removed, check this: https://github.com/AkaneNyan/distant-supervision-tweets
+##evidance removed, check this: https://github.com/AkaneNyan/distant-supervision-tweets
 
-- ABRR
+# ABRR
 
 def review_clean_text(text):
     text = str(text)
@@ -121,4 +121,4 @@ def fasttext_clean(text):
     text = ' '.join(tknzr.tokenize(text))
     return text.lower()
 
-# No clearning applied for contextual-embedding based models 
+## No clearning applied for contextual-embedding based models 
