@@ -14,6 +14,8 @@ _static representaions_
 !wget https://zenodo.org/record/3237458/files/glove.twitter.27B.200d.txt.gz
 !gzip -d glove.twitter.27B.200d.txt.gz
 
+
+
 _contextual representaions_
 
 Implemented using huggingface + Tensorflow
