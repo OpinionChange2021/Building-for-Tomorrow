@@ -6,16 +6,27 @@
 - GESD
 
 import string
+
 import re
+
 printable = set(string.printable)
+
 def collect_hashtags(string):
+
     return re.findall(r'\B#\w*[a-zA-Z]+\w*', string)
+    
 def clean_text(x):
+
     x = str(x)
+    
     for hash in collect_hashtags(x):
+    
         x = x.replace(hash, ' ')
+        
     x = ''.join(filter(lambda s: s in printable, x))
+    
     x = ' '.join(x.split())
+    
     return x.lower()
 
 for more check: https://github.com/OpinionChange2021/opinion_are_made_to_be_changed
