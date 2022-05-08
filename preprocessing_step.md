@@ -3,7 +3,6 @@
 
 ## datasets clearning 
 
-Cleaning
 - GESD
 
 import string
@@ -31,7 +30,6 @@ def review_clean_text(text):
     text = str(text)
     return text.lower()
     
-    
 # static-embedding based models clearning 
 
 - Google W2V
@@ -39,7 +37,6 @@ def review_clean_text(text):
 def _get_mispell(mispell_dict):
     mispell_re = re.compile('(%s)' % '|'.join(mispell_dict.keys()))
     return mispell_dict, mispell_re
-
 mispell_dict = {'colour':'color',
                 'centre':'center',
                 'didnt':'did not',
@@ -58,15 +55,12 @@ mispell_dict = {'colour':'color',
                 'instagram': 'social medium',
                 'whatsapp': 'social medium',
                 'snapchat': 'social medium'
-
                 }
 mispellings, mispellings_re = _get_mispell(mispell_dict)
-
 def replace_typical_misspell(text):
     def replace(match):
         return mispellings[match.group(0)]
     return mispellings_re.sub(replace, text)
-    
 def w2v_clean_text(x):
     x = str(x)
     for punct in "/-'":
@@ -75,17 +69,13 @@ def w2v_clean_text(x):
         x = x.replace(punct, f' {punct} ')
     for punct in '?!.,"#$%\'()*+-/:;<=>@[\\]^_`{|}~' + '“”’':
         x = x.replace(punct, '')
-
     x = re.sub('[0-9]{5,}', '#####', x)
     x = re.sub('[0-9]{4}', '####', x)
     x = re.sub('[0-9]{3}', '###', x)
     x = re.sub('[0-9]{2}', '##', x)
-
     x = replace_typical_misspell(x)
-
     to_remove = ['a', 'to', 'of', 'and']
     sentences = ' '.join(word for word in x.split() if not word in to_remove)
-
     return sentences
     
  - Glove
@@ -94,11 +84,9 @@ def w2v_clean_text(x):
     # Different regex parts for smiley faces
     eyes = r"[8:=;]"
     nose = r"['`\-]?"
-
     # function so code less repetitive
     def re_sub(pattern, repl):
         return re.sub(pattern, repl, text, flags=FLAGS)
-
     text = re_sub(r"https?:\/\/\S+\b|www\.(\w+\.)+\S*", "")
     text = re_sub(r"@\w+", "")
     text = re_sub(r"{}{}[)dD]+|[)dD]+{}{}".format(eyes, nose, nose, eyes), "")
@@ -115,14 +103,12 @@ def w2v_clean_text(x):
     text = re_sub(r"\(([a-zA-Z<>]+)\)", r"")
     text = re_sub(r"  ", r" ")
     text = re_sub(r" ([A-Z]){2,} ", allcaps)
-
     return text.lower()
   
 - Fasttext
 
 from nltk.tokenize import TweetTokenizer
 tknzr = TweetTokenizer()
-
 def fasttext_clean(text):
     text = ' '.join(tknzr.tokenize(text))
     return text.lower()
