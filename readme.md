@@ -7,4 +7,4 @@ and pilot study Rabab Alkhalifa, Elena Kochkina, and Arkaitz Zubiaga. 2021. **Op
 
 Part of PhD work of Rabab Alkhalifa, raalkhalifa@iau.edu.sa/ r.a.a.alkhalifa@qmul.ac.uk 
 
-If you are intresting about more details contact the authors.
+If you are intrested about getting more details contact the authors.
