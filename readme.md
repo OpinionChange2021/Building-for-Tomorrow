@@ -11,6 +11,8 @@ Performance of text classification models can drop over time when new data to be
 - We look at properties of the datasets to understand what impacts performance drop.
 - We assess the potential and limitations of contextual language models to develop temporal robustness.
 
+Preprint: https://arxiv.org/abs/2205.05435
+
 This paper is complementary to a survery paper:
 
 Alkhalifa, Rabab, and Arkaitz Zubiaga. **"Capturing stance dynamics in social media: open challenges and research directions."** International Journal of Digital Humanities (2022): 1-21.
