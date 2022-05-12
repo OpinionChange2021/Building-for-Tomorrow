@@ -5,17 +5,17 @@ Performance of text classification models can drop over time when new data to be
 
 ![image](https://user-images.githubusercontent.com/83759421/168052272-735a9daa-2255-49c3-a70a-73002793b79a.png)
 
-We shed light into the temporal robustness of existing language models.
-We investigate the impact of classification model choice in cross-temporal performance.
-We analyse when and why model performance drops over time, which informs when a model needs adapting.
-We look at properties of the datasets to understand what impacts performance drop.
-We assess the potential and limitations of contextual language models to develop temporal robustness.
+- We shed light into the temporal robustness of existing language models.
+- We investigate the impact of classification model choice in cross-temporal performance.
+- We analyse when and why model performance drops over time, which informs when a model needs adapting.
+- We look at properties of the datasets to understand what impacts performance drop.
+- We assess the potential and limitations of contextual language models to develop temporal robustness.
 
 This paper is complementary to a survery paper:
 
 Alkhalifa, Rabab, and Arkaitz Zubiaga. **"Capturing stance dynamics in social media: open challenges and research directions."** International Journal of Digital Humanities (2022): 1-21.
 
-and pilot study: 
+and pilot study proposed in workshop paper: 
 
 Rabab Alkhalifa, Elena Kochkina, and Arkaitz Zubiaga. 2021. **Opinions are Made to be Changed: Temporally Adaptive Stance Classification**. In Proceedings of the 2021 Workshop on Open Challenges in Online Social Networks (OASIS '21). Association for Computing Machinery, New York, NY, USA, 27–32. https://doi.org/10.1145/3472720.3483620, https://github.com/OpinionChange2021/opinion_are_made_to_be_changed
 
