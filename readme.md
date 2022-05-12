@@ -11,10 +11,6 @@ We analyse when and why model performance drops over time, which informs when a 
 We look at properties of the datasets to understand what impacts performance drop.
 We assess the potential and limitations of contextual language models to develop temporal robustness.
 
-
-![image](https://user-images.githubusercontent.com/83759421/168053210-97ed26c2-5bb7-488b-819d-26afd19f0224.png)
-
-
 This paper is complementary to a survery paper:
 
 Alkhalifa, Rabab, and Arkaitz Zubiaga. **"Capturing stance dynamics in social media: open challenges and research directions."** International Journal of Digital Humanities (2022): 1-21.
